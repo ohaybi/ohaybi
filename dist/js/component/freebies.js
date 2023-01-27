@@ -10,7 +10,7 @@ const generateFreebies = () => {
 
   for (const data of freebieData) {
     freebiesList.innerHTML += `
-        <a id=${data.id} href="${data.url}" class="relative hover:scale-95 duration-500 ease-in-out">
+        <a id=${data.id} href="${data.url}" target="_blank" class="relative hover:scale-95 duration-500 ease-in-out">
             <img src="${folderPath}/${data.img}" alt="${data.title}" class="rounded-2xl" />
         </a>
     `;
