@@ -16,7 +16,7 @@ class Footer extends HTMLElement {
       <div class="container">
         <div class="flex flex-col md:flex-row justify-between border-t border-hitam-50 py-5 md:py-10">
           <div class="self-center md:self-start py-2">
-            <a href="${baseUrl}"><h6 class="text-[10px] md:text-base font-medium relative hover:scale-90 duration-700 ease-in-out">Download CV</h6></a>
+            <a href="/dist/CV_AbdillahMufti.pdf" download><h6 class="text-[10px] md:text-base font-medium relative hover:scale-90 duration-700 ease-in-out">Download CV</h6></a>
           </div>
           <div class="self-center md:self-end flex gap-x-4">
             <a href="https://www.instagram.com/ohaybi/" target="_blank"><h6 class="text-[10px] md:text-base font-medium relative hover:scale-90 duration-700 ease-in-out">Instagram</h6></a>
