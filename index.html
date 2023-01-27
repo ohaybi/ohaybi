@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdillah Mufti ― User Interface Designer</title>
+
+    <link rel="stylesheet" href="dist/css/tailwindcss.css" />
+    <link rel="stylesheet" href="dist/clash-display/css/clash-display.css" />
+  </head>
+  <body class="bg-hitam-100 text-putih">
+    <!-- Main App -->
+    <div class="app">
+      <!-- Navbar -->
+      <nav-bar></nav-bar>
+      <!-- Navbar End -->
+
+      <!-- Hero -->
+      <div id="hero" class="w-full">
+        <div class="container">
+          <div class="hero-container bg-gradient-to-b from-oren to-transparent text-putih rounded-t-2xl flex flex-col justify-center items-center w-full h-[50vh] md:h-[90vh] gap-y-5 hiding delay-[350ms]">
+            <div class="w-[90%] flex justify-between items-center">
+              <h1 class="hero-text hiding">UI</h1>
+              <div class="hero-text-img bg-[url('https://source.unsplash.com/1920x720?landscape')] hiding delay-[100ms]"></div>
+              <h1 class="hero-text hiding delay-[150ms]">Design</h1>
+            </div>
+            <!-- <div class="w-[90%] flex justify-between items-center md:hidden">
+              <h1 class="hero-text delay-[150ms]">&</h1>
+            </div> -->
+            <div class="w-[90%] flex justify-between items-center">
+              <h1 class="hero-text hidden md:block hiding delay-[200ms]">&⠀</h1>
+              <h1 class="hero-text hiding delay-[200ms]">Front</h1>
+              <div class="hero-text-img bg-[url('https://source.unsplash.com/1920x720?landscape')] hiding delay-[250ms]"></div>
+              <h1 class="hero-text hiding delay-[200ms]">End</h1>
+            </div>
+            <div class="w-[90%] flex justify-start items-center gap-x-5">
+              <h1 class="hero-text hiding delay-[200ms]">—</h1>
+              <div class="hero-pfp bg-[url('/dist/img/pfp.png')] hiding delay-[250ms]"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Hero End -->
+
+      <!-- CTA -->
+      <div id="cta" class="absolute z-50 translate-x-[-30vw] md:translate-x-[-20vw] translate-y-[-50%] hiding">
+        <a href="mailto:aabimufti@gmail.com" class="group scale-75 md:scale-100 hover:scale-[60%] hover:md:scale-90 rounded-full w-[120px] md:w-[160px] h-auto flex justify-center items-center duration-700 ease-in-out">
+          <img src="dist/img/cta-bg.svg" class="absolute" />
+          <img src="dist/img/cta-text.svg" class="absolute animate-infinite-spin" />
+          <img src="dist/img/cta-arrow.svg" class="absolute group-hover:scale-110 group-hover:-rotate-45 duration-700 ease-in-out" />
+        </a>
+      </div>
+      <!-- CTA END -->
+
+      <!-- About -->
+      <div id="about" class="w-full pt-40 pb-16 md:pt-60 md:pb-32">
+        <div class="container flex flex-col md:flex-row justify-around">
+          <div class="about-heading overflow-hidden">
+            <h1 class="about-heading-text hiding">Oh, Hay!</h1>
+          </div>
+          <div class="about-content overflow-hidden">
+            <p class="about-content-paragraph text-hitam-50 leading-relaxed hiding delay-100">
+              I'm Abdillah Mufti a.k.a Abi.
+              <br /><br />
+              I have focus learning on <span class="font-semibold">UI Design</span> and <span class="font-semibold">Front-End</span> skills. <br /><br />
+              Currently studying at 'Universitas Amikom Purwokerto' majoring in Information Technology.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- About End -->
+
+      <!-- Projects -->
+      <project-section></project-section>
+      <!-- Projects End -->
+
+      <!-- Tool and Skill -->
+      <div id="tool-skill" class="w-full py-20 md:py-32">
+        <div class="container">
+          <div class="flex flex-col gap-y-3 justify-center items-center">
+            <h1 class="text-3xl md:text-6xl font-bold uppercase">Tools and Skills</h1>
+            <h3 class="max-w-2xl text-center text-md md:text-xl text-hitam-50">I'm learning several basic developer tools like html, css, and Javascript so I can work better with front-end developers</h3>
+          </div>
+          <div class="flex gap-y-2 gap-x-2 justify-center flex-wrap items-center mt-10 md:max-w-[50vw] mx-auto">
+            <div class="tool-items flex justify-center items-center gap-x-2 border border-putih px-6 py-3 rounded-full hiding delay-100">
+              <img src="dist/icons/logo-figma.svg" alt="Logo Figma" class="w-4 md:w-6 h-auto" />
+              <h6 class="text-sm md:text-base">Figma</h6>
+            </div>
+            <div class="tool-items flex justify-center items-center gap-x-2 border border-putih px-6 py-3 rounded-full hiding delay-200">
+              <img src="dist/icons/logo-illustrator.svg" alt="Logo Adobe Illustrator" class="w-4 md:w-6 h-auto" />
+              <h6 class="text-sm md:text-base">Illustrator</h6>
+            </div>
+            <div class="tool-items flex justify-center items-center gap-x-2 border border-putih px-6 py-3 rounded-full hiding delay-300">
+              <img src="dist/icons/logo-photoshop.svg" alt="Logo Adobe Photoshop" class="w-4 md:w-6 h-auto" />
+              <h6 class="text-sm md:text-base">Photoshop</h6>
+            </div>
+            <div class="tool-items flex justify-center items-center gap-x-2 border border-putih px-6 py-3 rounded-full hiding delay-[400ms]">
+              <img src="dist/icons/logo-html5.svg" alt="Logo HTML5" class="w-4 md:w-6 h-auto" />
+              <h6 class="text-sm md:text-base">HTML</h6>
+            </div>
+            <div class="tool-items flex justify-center items-center gap-x-2 border border-putih px-6 py-3 rounded-full hiding delay-500">
+              <img src="dist/icons/logo-css3.svg" alt="Logo CSS3" class="w-4 md:w-6 h-auto" />
+              <h6 class="text-sm md:text-base">CSS</h6>
+            </div>
+            <div class="tool-items flex justify-center items-center gap-x-2 border border-putih px-6 py-3 rounded-full hiding delay-500">
+              <img src="dist/icons/logo-js.svg" alt="Logo CSS3" class="w-4 md:w-6 h-auto" />
+              <h6 class="text-sm md:text-base">Javascript</h6>
+            </div>
+            <div class="tool-items flex justify-center items-center gap-x-2 border border-putih px-6 py-3 rounded-full hiding delay-500">
+              <img src="dist/icons/logo-php.svg" alt="Logo CSS3" class="w-4 md:w-6 h-auto" />
+              <h6 class="text-sm md:text-base">PHP</h6>
+            </div>
+            <div class="tool-items flex justify-center items-center gap-x-2 border border-putih px-6 py-3 rounded-full hiding delay-[600ms]">
+              <img src="dist/icons/logo-bootstrap.svg" alt="Logo Bootstrap" class="w-6 h-auto" />
+              <h6 class="text-sm md:text-base">Bootstrap</h6>
+            </div>
+            <div class="tool-items flex justify-center items-center gap-x-2 border border-putih px-6 py-3 rounded-full hiding delay-[600ms]">
+              <img src="dist/icons/logo-tailwindcss.svg" alt="Logo Bootstrap" class="w-6 h-auto" />
+              <h6 class="text-sm md:text-base">TailwindCSS</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Tool and Skill End -->
+
+      <!-- Freebies -->
+      <div id="freebies-count" aria-count="3"></div>
+      <freebies-section></freebies-section>
+      <!-- Freebies End -->
+
+      <!-- Testimoni -->
+      <div id="testimoni" class="w-full py-20 md:py-32">
+        <div class="container">
+          <h1 class="text-3xl md:text-6xl font-bold text-center uppercase">“What They Say About Me”</h1>
+          <div class="grid gap-x-10 gap-y-10 grid-cols-1 md:grid-cols-2 auto-rows-auto mt-10">
+            <div class="text-sm text-hitam-50 md:text-xl overflow-hidden">
+              <p class="hiding">“Working on a project with Mufti is very interesting, he can transform the team's ideas into the design. And the design results are in accordance with the team's expectations.”</p>
+              <h5 class="mt-6 text-putih hiding delay-100"><span class="font-bold">— Deni Purnomo</span>, ReadUp Team</h5>
+            </div>
+            <div class="text-sm text-hitam-50 md:text-xl">
+              <p class="hiding delay-200">“Design that created by Mufti for ReadUp is great! easy to use by new user and Mufti can apply the features that I briefed into the design.”</p>
+              <h5 class="mt-6 text-putih hiding delay-300"><span class="font-bold">— Arjund Hafez</span>, ReadUp Team</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Testimoni End -->
+
+      <!-- Contact -->
+      <contact-me></contact-me>
+      <!-- Contact End -->
+
+      <!-- Footer -->
+      <footer-section></footer-section>
+      <!-- Footer End -->
+
+      <!-- Cover -->
+      <cover-loader></cover-loader>
+      <!-- Cover End -->
+    </div>
+
+    <script type="module" src="dist/js/app.js"></script>
+  </body>
+</html>

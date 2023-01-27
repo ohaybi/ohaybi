@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-clash-display;
+}
+
+.hide {
+  @apply hidden;
+}
+
+.hiding {
+  @apply opacity-0 translate-y-full transition-all duration-1000;
+}
+
+.showing {
+  @apply opacity-100 translate-y-0;
+}
+
+#cover-hitam {
+  @apply bg-hitam-100 z-[9999] w-[100vw] h-[100vh] top-0 left-0 fixed flex flex-col justify-center items-center;
+}
+#cover-oren {
+  @apply bg-oren z-[9999] w-[100vw] h-[100vh] top-0 left-0 fixed;
+}
+
+.dissapear-1 {
+  animation: dissapear 900ms ease-in-out forwards;
+  animation-delay: 100ms;
+}
+.dissapear-2 {
+  animation: dissapear 1000ms ease-in-out forwards;
+  animation-delay: 150ms;
+}
+
+@keyframes dissapear {
+  100% {
+    @apply -top-full invisible;
+  }
+}
+
+/* Navbar */
+.nav-container {
+  @apply container flex justify-between items-center;
+}
+
+.nav-brand {
+  @apply text-putih;
+}
+
+.nav-brand-text {
+  @apply font-semibold text-[10px] md:text-base relative hover:scale-90 hover:-rotate-3 duration-700 ease-in-out;
+}
+
+.nav-link-list {
+  @apply flex items-center gap-x-0 md:gap-x-2;
+}
+
+.nav-link-item {
+  @apply py-1 px-2 text-[10px] uppercase text-putih font-medium relative hover:scale-90 hover:-rotate-3 duration-700 ease-in-out md:text-sm;
+}
+
+/* Hero Section */
+.hero-text {
+  font-size: calc(40px + (120 - 40) * ((100vw - 300px) / (1600 - 300)));
+  @apply font-bold;
+}
+
+.hero-text-img {
+  height: calc(40px + (120 - 40) * ((100vw - 300px) / (1600 - 300)));
+  @apply rounded-full w-full bg-center bg-no-repeat bg-cover box-border mx-5 grayscale;
+}
+
+.hero-pfp {
+  @apply rounded-full w-8 md:w-16 h-8 md:h-16 bg-center bg-no-repeat bg-cover;
+}
+
+/* About Section */
+.about-heading {
+  @apply w-full md:w-1/2;
+}
+
+.about-heading-text {
+  @apply font-bold text-4xl md:text-6xl pb-10 md:pb-0;
+}
+
+.about-content {
+  @apply w-full md:w-1/2;
+}
+
+.about-content-paragraph {
+  @apply text-base md:text-2xl md:uppercase leading-relaxed;
+}
+
+/* Tools */
+.tool-items {
+  @apply opacity-50 hover:opacity-100;
+}
+
+/* Freebies */
+.category-button {
+  @apply relative rounded py-1 px-2 text-xs font-semibold capitalize text-hitam-50 duration-700 ease-in-out after:absolute after:top-0 after:left-0 after:-z-10 after:block after:h-full after:w-0 after:-skew-y-3 after:duration-700 hover:text-putih hover:after:w-[105%] hover:after:bg-oren  md:text-base;
+}
+
+.category-active {
+  @apply font-semibold text-putih after:w-full after:bg-oren;
+}
+
+.text-category {
+  @apply text-xs capitalize text-hitam-50 md:text-sm;
+}
